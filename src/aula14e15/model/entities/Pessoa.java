@@ -4,7 +4,14 @@ public abstract class Pessoa {
     protected String nome, sexo;
     protected Integer idade, experiencia;
 
-    public abstract void ganharExp();
+    public Pessoa(String nome, String sexo, Integer idade) {
+        this.nome = nome;
+        this.sexo = sexo;
+        this.idade = idade;
+        this.experiencia = 0;
+    }
+
+    protected abstract void ganharExp();
 
     public Integer getExperiencia() {
         return experiencia;
